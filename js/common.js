@@ -8,6 +8,10 @@ $(document).ready(function() {
     });
 });
 
+$(document).ready(function () {
+    sortSelect('#selection', 'text', 'asc');
+});
+
 function change(value, name) {
     $('#ranking tbody').empty();        
     ranking.destroy();
@@ -42,3 +46,19 @@ function get_ghranking(region){
         }
     });
 }
+
+function sortSelect(select, attr, order) {
+    if(attr === 'text'){
+        if(order === 'asc'){
+            $(select).html($(select).children('option').sort(function (x, y) {
+                return $(x).text().toUpperCase() < $(y).text().toUpperCase() ? -1 : 1;
+            }));
+        }// end asc
+        if(order === 'desc'){
+            $(select).html($(select).children('option').sort(function (y, x) {
+                return $(x).text().toUpperCase() < $(y).text().toUpperCase() ? -1 : 1;
+            }));
+        }// end desc
+    }
+
+};
