@@ -5,7 +5,8 @@
         <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
         <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
         <script type="text/javascript" language="javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+        <script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+        <script type="text/javascript" language="javascript" src="js/common.js"></script>
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
@@ -63,51 +64,10 @@
     </div>
     
     <script>
-    var ranking;    
     
+    // Default ranking
     get_ghranking("euskadi/euskadi");
     
-    
-    $(document).ready(function() {
-        $('#selection').on('change', function() {
-            change($(this).val(), $(this).find('option:selected').text());
-        });
-    });
-    
-    function change(value, name) {
-        $('#ranking tbody').empty();        
-        ranking.destroy();
-        get_ghranking(value);
-    }
-    
-    function printRanking(ranking){
-        
-        for(i = 0; i < ranking.length; i++){
-                        
-            $('#ranking tbody').append("<tr><td>"+ranking[i].name+"</td><td>"+ranking[i].public+"</td><td>"+ranking[i].private+"</td><td>"
-            +ranking[i].repositories+"</td><td>"+ranking[i].followers+"</td><td>"+ranking[i].join+"</td><td>"
-            +"<img width='64px' src='"+ranking[i].avatar+"'>"+"</td></tr>");
-            
-        }        
-        
-    }
-    
-    function get_ghranking(region)
-    {
-        $.ajax({type:'GET', url: "https://raw.githubusercontent.com/iblancasa/ghrankings/master/"+region+".json", dataType: 'json', async: true,
-            success: function(data) {
-                $(".datetimestamp").html(data.date);
-                printRanking(data.users);
-                ranking =$('#ranking').DataTable( 
-                {
-                    //"language": {
-                    //"url": "i18n/Spanish.json"
-                    //}
-                    "order": [[ 1, "desc" ]]
-                } );
-            }
-        });
-    }
     </script>
 
     </body>
