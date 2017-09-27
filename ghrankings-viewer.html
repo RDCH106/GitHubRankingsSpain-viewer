@@ -11,12 +11,14 @@
     </head>
     <body>
 
-        <h2>ghrankings-viewer</h2>
-        <br>
+        <div class="container">
+            <h2>Top GitHub España</h2>
+            <br>
+        </div>
     
         <div class="container"> 
             <button id="alert_refresh" class="btn" style="float:right">Refrescar</button>
-            <p>A continuación se muestras las alertas recibidas para el mes actual de <span class="curMonth"></span></p>     
+            <p>Consulte el estado del ranking generado para <span class="datetimestamp"></span></p>     
             <br>
             <table id="ranking" class="table table-hover">
                 <thead>
@@ -50,6 +52,7 @@
     <script>
     get_ghranking("euskadi");
     
+    
     function printRanking(ranking){
         
         for(i = 0; i < ranking.length; i++){
@@ -66,6 +69,7 @@
     {
         $.ajax({type:'GET', url: "https://raw.githubusercontent.com/iblancasa/ghrankings/master/euskadi/"+region+".json", dataType: 'json', async: true,
             success: function(data) {
+                $(".datetimestamp").html(data.date);
                 printRanking(data.users);
                 alertTable =$('#ranking').DataTable( 
                 {
