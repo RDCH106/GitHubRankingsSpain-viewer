@@ -1,0 +1,83 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css">
+        <title>ghrankings-viewer</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+
+        <h2>ghrankings-viewer</h2>
+        <br>
+    
+        <div class="container"> 
+            <button id="alert_refresh" class="btn" style="float:right">Refrescar</button>
+            <p>A continuación se muestras las alertas recibidas para el mes actual de <span class="curMonth"></span></p>     
+            <br>
+            <table id="ranking" class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Usuario</th>
+                        <th>Contrib. públicas</th>
+                        <th>Contrib. privadas</th>
+                        <th>Repositorios</th>
+                        <th>Seguidores</th>
+                        <th>Desde</th>
+                        <th>Avatar</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>Usuario</th>
+                        <th>Contrib. pub</th>
+                        <th>Contrib. priv</th>
+                        <th>Repositorios</th>
+                        <th>Seguidores</th>
+                        <th>Desde</th>
+                        <th>Avatar</th>
+                    </tr>
+                </tfoot>
+            <tbody>
+                <!-- Feed the table with get_ghranking -->
+            </tbody>
+        </table>
+    </div>
+    
+    <script>
+    get_ghranking("euskadi");
+    
+    function printRanking(ranking){
+        
+        for(i = 0; i < ranking.length; i++){
+                        
+            $('#ranking tbody').append("<tr><td>"+ranking[i].name+"</td><td>"+ranking[i].public+"</td><td>"+ranking[i].private+"</td><td>"
+            +ranking[i].repositories+"</td><td>"+ranking[i].followers+"</td><td>"+ranking[i].join+"</td><td>"
+            +"<img width='64px' src='"+ranking[i].avatar+"'>"+"</td></tr>");
+            
+        }        
+        
+    }
+    
+    function get_ghranking(region)
+    {
+        $.ajax({type:'GET', url: "https://raw.githubusercontent.com/iblancasa/ghrankings/master/euskadi/"+region+".json", dataType: 'json', async: true,
+            success: function(data) {
+                printRanking(data.users);
+                alertTable =$('#ranking').DataTable( 
+                {
+                    //"language": {
+                    //"url": "i18n/Spanish.json"
+                    //}
+                    "order": [[ 1, "desc" ]]
+                } );
+            }
+        });
+    }
+    </script>
+
+    </body>
+</html> 
