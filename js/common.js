@@ -12,9 +12,11 @@ $(document).ready(function () {
     sortSelect('#selection', 'text', 'asc');
 });
 
-function change(value, name) {
-    $('#ranking tbody').empty();        
-    ranking.destroy();
+function change(value, name) {    
+    if(ranking != undefined){
+        ranking.destroy();
+    }
+    $('#ranking tbody').empty();
     get_ghranking(value);
 }
     
