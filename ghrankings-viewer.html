@@ -4,8 +4,11 @@
         <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
         <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
+        <script type="text/javascript" language="javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
         <title>ghrankings-viewer</title>
         <meta charset="UTF-8">
     </head>
@@ -13,6 +16,16 @@
 
         <div class="container">
             <h2>Top GitHub España</h2>
+            <br>
+        </div>
+        
+        <div class="container">
+            <div>
+            <select id="selection" class="selectpicker show-tick" data-live-search="true">
+                <option data-icon="glyphicon-globe" value="euskadi/euskadi" selected>País Vasco</option>
+                <option data-icon="glyphicon-globe" value="spain-region">España</option>      
+            </select>
+            </div>
             <br>
         </div>
     
@@ -50,8 +63,22 @@
     </div>
     
     <script>
-    get_ghranking("euskadi");
+    var ranking;    
     
+    get_ghranking("euskadi/euskadi");
+    
+    
+    $(document).ready(function() {
+        $('#selection').on('change', function() {
+            change($(this).val(), $(this).find('option:selected').text());
+        });
+    });
+    
+    function change(value, name) {
+        $('#ranking tbody').empty();        
+        ranking.destroy();
+        get_ghranking(value);
+    }
     
     function printRanking(ranking){
         
@@ -67,11 +94,11 @@
     
     function get_ghranking(region)
     {
-        $.ajax({type:'GET', url: "https://raw.githubusercontent.com/iblancasa/ghrankings/master/euskadi/"+region+".json", dataType: 'json', async: true,
+        $.ajax({type:'GET', url: "https://raw.githubusercontent.com/iblancasa/ghrankings/master/"+region+".json", dataType: 'json', async: true,
             success: function(data) {
                 $(".datetimestamp").html(data.date);
                 printRanking(data.users);
-                alertTable =$('#ranking').DataTable( 
+                ranking =$('#ranking').DataTable( 
                 {
                     //"language": {
                     //"url": "i18n/Spanish.json"
