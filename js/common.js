@@ -31,7 +31,7 @@ function get_ghranking(region){
 }
 
 function change(value, name) {    
-    if(ranking != undefined){
+    if(ranking !== undefined){
         ranking.destroy();
     }
     $('#ranking tbody').empty();
