@@ -46,9 +46,9 @@ function get_ghranking(region){
             printRanking(data.users);
             ranking =$('#ranking').DataTable( 
             {
-            //"language": {
-            //"url": "i18n/Spanish.json"
-            //}
+            "language": {
+                "url": "i18n/Spanish.json"
+            },
             "order": [[ 1, "desc" ]]
             } );
         }
