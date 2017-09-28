@@ -7,7 +7,7 @@
         <script type="text/javascript" language="javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
         <script type="text/javascript" language="javascript" src="js/common.js"></script>
-        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link id="css_theme" rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
         <title>ghrankings-viewer</title>
@@ -16,11 +16,32 @@
     <body>
 
         <div class="container">
-            <h2>Top GitHub España</h2>
             <br>
-        </div>
+            <h2 style="float:left">Top GitHub España</h2>
+            <select id="theme" class="btn btn-default dropdown-toggle" style="float:right">
+                <option value="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" selected="selected">Bootstrap</option>
+                <option value="https://bootswatch.com/cerulean/bootstrap.min.css">Cerulean</option>
+                <option value="https://bootswatch.com/cosmo/bootstrap.min.css">Cosmo</option>
+                <option value="https://bootswatch.com/cyborg/bootstrap.min.css">Cyberdog</option>
+                <option value="https://bootswatch.com/darkly/bootstrap.min.css">Darkly</option>
+                <option value="https://bootswatch.com/flatly/bootstrap.min.css">Flatly</option>
+                <option value="https://bootswatch.com/journal/bootstrap.min.css">Journal</option>
+                <option value="https://bootswatch.com/lumen/bootstrap.min.css">Lumen</option>
+                <option value="https://bootswatch.com/paper/bootstrap.min.css">Paper</option>
+                <option value="https://bootswatch.com/readable/bootstrap.min.css">Readable</option>
+                <option value="https://bootswatch.com/sandstone/bootstrap.min.css">Sandston</option>
+                <option value="https://bootswatch.com/simplex/bootstrap.min.css">Simplex</option>
+                <option value="https://bootswatch.com/slate/bootstrap.min.css">Slate</option>
+                <option value="https://bootswatch.com/solar/bootstrap.min.css">Solar</option>
+                <option value="https://bootswatch.com/spacelab/bootstrap.min.css">Spacelab</option>
+                <option value="https://bootswatch.com/superhero/bootstrap.min.css">Superhero</option>
+                <option value="https://bootswatch.com/united/bootstrap.min.css">United</option>
+                <option value="https://bootswatch.com/yeti/bootstrap.min.css">Yeti</option>
+            </select>
+        </div>        
         
         <div class="container">
+            <br>
             <div>
             <select id="selection" class="selectpicker show-tick" data-live-search="true">                
                 <option data-icon="glyphicon-globe" value="spain-region" selected="selected">España</option>
