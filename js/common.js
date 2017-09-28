@@ -1,29 +1,6 @@
 
 var ranking;
 
-function init(region){
-    
-    $(document).ready(function() {
-        $('#selection').on('change', function() {
-            change($(this).val(), $(this).find('option:selected').text());
-        });
-    });
-    
-    $(document).ready(function () {
-            sortSelect('#selection', 'text', 'asc');
-            get_ghranking(region);
-            $("#selection").val(region);    
-    });
-    
-    $(document).ready(function() {
-        $("#theme").val("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")  // Default theme
-        $('#theme').on('change', function() {            
-            $("#css_theme").attr("href", $(this).val());
-        });
-    });
-    
-}
-
 function change(value, name) {    
     if(ranking != undefined){
         ranking.destroy();
@@ -76,3 +53,26 @@ function sortSelect(select, attr, order) {
     }
 
 };
+
+function init(region){
+    
+    $(document).ready(function() {
+        $('#selection').on('change', function() {
+            change($(this).val(), $(this).find('option:selected').text());
+        });
+    });
+    
+    $(document).ready(function () {
+            sortSelect('#selection', 'text', 'asc');
+            get_ghranking(region);
+            $("#selection").val(region);    
+    });
+    
+    $(document).ready(function() {
+        $("#theme").val("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");  // Default theme
+        $('#theme').on('change', function() {            
+            $("#css_theme").attr("href", $(this).val());
+        });
+    });
+    
+}
