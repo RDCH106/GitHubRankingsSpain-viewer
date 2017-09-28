@@ -51,8 +51,7 @@ function sortSelect(select, attr, order) {
             }));
         }// end desc
     }
-
-};
+}
 
 function init(region){
     
