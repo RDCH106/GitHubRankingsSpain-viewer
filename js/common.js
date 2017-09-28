@@ -1,13 +1,5 @@
 
 var ranking;
-
-function change(value, name) {    
-    if(ranking != undefined){
-        ranking.destroy();
-    }
-    $('#ranking tbody').empty();
-    get_ghranking(value);
-}
     
 function printRanking(ranking){
         
@@ -36,6 +28,14 @@ function get_ghranking(region){
             } );
         }
     });
+}
+
+function change(value, name) {    
+    if(ranking != undefined){
+        ranking.destroy();
+    }
+    $('#ranking tbody').empty();
+    get_ghranking(value);
 }
 
 function sortSelect(select, attr, order) {
