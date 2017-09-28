@@ -22,9 +22,12 @@
         
         <div class="container">
             <div>
-            <select id="selection" class="selectpicker show-tick" data-live-search="true">
-                <option data-icon="glyphicon-globe" value="euskadi/euskadi" selected>País Vasco</option>
-                <option data-icon="glyphicon-globe" value="spain-region">España</option>      
+            <select id="selection" class="selectpicker show-tick" data-live-search="true">                
+                <option data-icon="glyphicon-globe" value="spain-region" selected="selected">España</option>
+                <option data-icon="glyphicon-globe" value="euskadi/euskadi">País Vasco</option>
+                <option data-icon="glyphicon-globe" value="euskadi/alava">Álava</option>
+                <option data-icon="glyphicon-globe" value="euskadi/vizcaya">Bizcaya</option>
+                <option data-icon="glyphicon-globe" value="euskadi/guipuzcoa">Guipuzcoa</option>
             </select>
             </div>
             <br>
@@ -66,7 +69,7 @@
     <script>
     
     // Default ranking
-    get_ghranking("euskadi/euskadi");
+    init("spain-region");
     
     </script>
 

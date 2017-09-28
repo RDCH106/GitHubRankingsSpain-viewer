@@ -1,16 +1,22 @@
 
 var ranking;
-    
-    
-$(document).ready(function() {
-    $('#selection').on('change', function() {
-        change($(this).val(), $(this).find('option:selected').text());
-    });
-});
 
-$(document).ready(function () {
-    sortSelect('#selection', 'text', 'asc');
-});
+function init(region){
+    
+    $(document).ready(function() {
+        $('#selection').on('change', function() {
+            change($(this).val(), $(this).find('option:selected').text());
+    });
+    
+    $(document).ready(function () {
+            sortSelect('#selection', 'text', 'asc');
+            get_ghranking(region);
+            $("#selection").val(region);
+        });
+    
+    });
+    
+}
 
 function change(value, name) {    
     if(ranking != undefined){
