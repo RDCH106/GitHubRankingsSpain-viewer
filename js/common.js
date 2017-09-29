@@ -45,7 +45,7 @@ function change(value, name) {
     get_ghranking(value);
 }
 
-function sortSelect(select, attr, order) {
+/*function sortSelect(select, attr, order) {
     if(attr === "text"){
         if(order === "asc"){
             $(select).html($(select).children("option").sort(function (x, y) {
@@ -58,7 +58,7 @@ function sortSelect(select, attr, order) {
             }));
         }// end desc
     }
-}
+}*/
 
 function init(region){
     
@@ -69,7 +69,7 @@ function init(region){
     });
     
     $(document).ready(function () {
-            sortSelect("#selection", "text", "asc");
+            //sortSelect("#selection", "text", "asc");
             get_ghranking(region);
             $("#selection").val(region);    
     });
