@@ -3,14 +3,20 @@ var ranking;
     
 function printRanking(ranking){
         
-    for(i = 0; i < ranking.length; i++){
+    /*for(i = 0; i < ranking.length; i++){
                         
-    $('#ranking tbody').append("<tr><td><a href='https://github.com/"+ranking[i].name+"' target='_blank'>"+ranking[i].name+"</a>"
-    +"</td><td>"+ranking[i].public+"</td><td>"+ranking[i].private+"</td><td>"
-    +ranking[i].repositories+"</td><td>"+ranking[i].followers+"</td><td>"+ranking[i].join+"</td><td>"
-    +"<img width='64px' src='"+ranking[i].avatar+"'>"+"</td></tr>");
+        $('#ranking tbody').append("<tr><td><a href='https://github.com/"+ranking[i].name+"' target='_blank'>"+ranking[i].name+"</a>"
+        +"</td><td>"+ranking[i].public+"</td><td>"+ranking[i].private+"</td><td>"
+        +ranking[i].repositories+"</td><td>"+ranking[i].followers+"</td><td>"+ranking[i].join+"</td><td>"
+        +"<img width='64px' src='"+ranking[i].avatar+"'>"+"</td></tr>");
             
-    }        
+    }*/
+    ranking.forEach(function(arrayItem){
+            $('#ranking tbody').append("<tr><td><a href='https://github.com/"+arrayItem.name+"' target='_blank'>"+arrayItem.name+"</a>"
+            +"</td><td>"+arrayItem.public+"</td><td>"+arrayItem.private+"</td><td>"
+            +arrayItem.repositories+"</td><td>"+arrayItem.followers+"</td><td>"+arrayItem.join+"</td><td>"
+            +"<img width='64px' src='"+arrayItem.avatar+"'>"+"</td></tr>");
+        });
         
 }
     
