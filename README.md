@@ -8,6 +8,8 @@ Licencia: [AGPL-3.0](https://github.com/RDCH106/ghrankings-viewer/blob/master/LI
 
 Datos obtenidos de [ghrankings](https://github.com/iblancasa/ghrankings)
 
-Actualmente en desarrollo... 🛠️
-
 ### 👨‍💻 [Ver Ranking](https://rawgit.com/RDCH106/ghrankings-viewer/master/ghrankings-viewer.html)
+
+Las contribuciones son bienvenidas y se agradecen de antemano. Échale un vistazo al fichero [CONTRIBUTING.md](https://github.com/RDCH106/ghrankings-viewer/blob/master/CONTRIBUTING.md) 🛠️
+
+Si el proyecto te resulta de interés o útil, no dudes en dejar una ⭐ al proyecto para mejorar su visibilidad y relevancia.
