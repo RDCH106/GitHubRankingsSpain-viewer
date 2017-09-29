@@ -5,7 +5,8 @@ function printRanking(ranking){
         
     for(i = 0; i < ranking.length; i++){
                         
-    $('#ranking tbody').append("<tr><td>"+ranking[i].name+"</td><td>"+ranking[i].public+"</td><td>"+ranking[i].private+"</td><td>"
+    $('#ranking tbody').append("<tr><td><a href='https://github.com/"+ranking[i].name+"' target='_blank'>"+ranking[i].name+"</a>"
+    +"</td><td>"+ranking[i].public+"</td><td>"+ranking[i].private+"</td><td>"
     +ranking[i].repositories+"</td><td>"+ranking[i].followers+"</td><td>"+ranking[i].join+"</td><td>"
     +"<img width='64px' src='"+ranking[i].avatar+"'>"+"</td></tr>");
             
