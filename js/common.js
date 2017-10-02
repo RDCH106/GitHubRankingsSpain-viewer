@@ -1,5 +1,6 @@
 
 var ranking;
+var maxranking = 100;  // Max ranking elements (TOP 100)
     
 function printRanking(ranking){
         
@@ -25,7 +26,7 @@ function get_ghranking(region){
     $.ajax({type:"GET", url: "https://raw.githubusercontent.com/iblancasa/ghrankings/master/"+region+".json", dataType: "json", async: true,
         success: function(data) {
             $(".datetimestamp").html(data.date);
-            printRanking(data.users);
+            printRanking(data.users.slice(0, maxranking));
             ranking =$("#ranking").DataTable( 
             {
             "language": {
