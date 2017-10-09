@@ -2,23 +2,26 @@
 <html>
     <head>
         <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-        <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>        
         <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
+        <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/responsive/2.2.0/js/dataTables.responsive.min.js"></script>
+        <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/responsive/2.2.0/js/responsive.bootstrap.min.js"></script>
         <script type="text/javascript" language="javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
         <script type="text/javascript" language="javascript" src="js/common.js"></script>
         <link id="css_theme" rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.0/css/responsive.dataTables.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
         <title>ghrankings-viewer</title>
         <meta charset="UTF-8">
     </head>
     <body>
     
-        <!-- GitHub Rebbon -->
+        <!-- GitHub Ribbon -->
         <a href="https://github.com/RDCH106/ghrankings-viewer"><img style="position: absolute; top: 0; left: 0; border: 0;" 
         src="https://camo.githubusercontent.com/82b228a3648bf44fc1163ef44c62fcc60081495e/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f7265645f6161303030302e706e67" 
-        alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png" width="100px"></a>
+        alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png" width="8%"></a>
 
         <div class="container">
             <br>
@@ -136,7 +139,7 @@
         <div class="container"> 
             <p>Consulte el estado del ranking generado para <span class="datetimestamp"></span></p>     
             <br>
-            <table id="ranking" class="table table-hover table-responsive">
+            <table id="ranking" class="table table-hover table-responsive dt-responsive" width="100%">
                 <thead>
                     <tr>
                         <th>Usuario</th>
