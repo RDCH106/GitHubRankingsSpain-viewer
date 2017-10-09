@@ -32,7 +32,8 @@ function get_ghranking(region){
             "language": {
                 "url": "i18n/Spanish.json"
             },
-            "order": [[ 1, "desc" ]]
+            "order": [[ 1, "desc" ]],
+            "responsive": true
             } );
         }
     });
