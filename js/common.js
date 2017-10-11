@@ -33,7 +33,11 @@ function get_ghranking(region){
                 "url": "i18n/Spanish.json"
             },
             "order": [[ 1, "desc" ]],
-            "responsive": true
+            "responsive": true,
+            "columnDefs": [ {
+                "targets": 6,   /* Disable sort icon in Avatar column */
+                "orderable": false,
+            } ]
             } );
         }
     });
