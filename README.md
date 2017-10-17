@@ -1,4 +1,4 @@
-# ghrankings-viewer
+# GitHubRankingsSpain Viewer
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/6a8e8efcea6c44d9b6e51fd63f18394a)](https://www.codacy.com/app/RDCH106/ghrankings-viewer?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=RDCH106/ghrankings-viewer&amp;utm_campaign=Badge_Grade)
 
@@ -6,7 +6,7 @@
 
 Licencia: [AGPL-3.0](https://github.com/RDCH106/ghrankings-viewer/blob/master/LICENSE)
 
-Datos obtenidos de [ghrankings](https://github.com/iblancasa/ghrankings)
+Datos obtenidos de [GitHubRankingsSpain](https://github.com/iblancasa/ghrankings)
 
 ### 👨‍💻 [Ver Ranking](https://rawgit.com/RDCH106/ghrankings-viewer/master/ghrankings-viewer.html)
 
