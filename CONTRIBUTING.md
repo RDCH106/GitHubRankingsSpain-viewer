@@ -1,6 +1,6 @@
 Contributing
 ===============
-This document briefly lists the guidelines for contributing to Linkero.
+This document briefly lists the guidelines for contributing to GitHubRankingsSpain-viewer.
 
 Reporting Bugs
 ----------------
@@ -12,14 +12,14 @@ When creating an issue in GitHub, try to include when feasible:
 
 Contributing Code
 --------------------------
-One of the major goals of Linkero is to be easy to modify and hack.
+One of the major goals of GitHubRankingsSpain-viewer is to be easy to modify and hack.
 
 If you fix a bug or add a cool feature, please submit a pull request!
 
 
 ### Code Style
 
-*  Use 2 spaces for indentation
+*  Use 4 spaces for indentation
 *  Use comments whenever the code's meaning is not obvious
 *  When in doubt, try to match the style in existing source files
 
