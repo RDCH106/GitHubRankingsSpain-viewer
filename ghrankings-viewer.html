@@ -173,7 +173,7 @@
     <script>
     
     // Default ranking
-    init("spain-region");
+    init(getParameterByName('region') == null ? "spain-region" : getParameterByName('region'));
     
     </script>
 
