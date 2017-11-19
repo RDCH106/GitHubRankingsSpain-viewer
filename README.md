@@ -13,3 +13,27 @@ Datos obtenidos de [GitHubRankingsSpain](https://github.com/iblancasa/ghrankings
 Las contribuciones son bienvenidas y se agradecen de antemano. Échale un vistazo al fichero [CONTRIBUTING.md](https://github.com/RDCH106/ghrankings-viewer/blob/master/CONTRIBUTING.md) 🛠️
 
 Si el proyecto te resulta de interés o útil, no dudes en dejar una ⭐ al proyecto para mejorar su visibilidad y relevancia.
+
+
+### Parametrización
+
+Es posible indicar por parametro la región de inicio a visualizar en el visor. Para ello añade tras `ghrankings-viewer.html` el siguiente parámetro:
+
+```
+.../ghrankings-viewer.html?region=<region_name>
+```
+
+**Tabla de Regiones** :es:
+
+| Región                   | region_name              |
+|--------------------------|--------------------------|
+| :es:**España**:es:       | spain-region             |
+| **Andalucía**            | andalucia/andalucia      |
+| Almería                  | andalucia/almeria        |
+| Cádiz                    | andalucia/cadiz          |
+| Córdoba                  | andalucia/cordoba        |
+| Granda                   | andalucia/granada        |
+| Huelva                   | andalucia/huelva         |
+| Jaén                     | andalucia/jaen           |
+| Málaga                   | andalucia/malaga         |
+| Sevilla                  | andalucia/sevilla        |
