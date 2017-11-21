@@ -65,3 +65,15 @@ Es posible indicar por parametro la región de inicio a visualizar en el visor. 
 | Lérida                   | catalonia/lleida              |
 | Tarragona                | catalonia/tarragona           |
 | **Ceuta**                | ceuta                         |
+| **Comunidad Valenciana** | cvalenciana/cvalenciana       |
+| Alicante                 | cvalenciana/alicante          |
+| Castellón                | cvalenciana/castellon         |
+| Valencia                 | cvalenciana/valencia          |
+| **Extremadura**          | extremadura/extremadura       |
+| Badajoz                  | extremadura/badajoz           |
+| Cáceres                  | extremadura/caceres           |
+| **Galicia**              | galicia/galicia               |
+| La Coruña                | galicia/coruna                |
+| Lugo                     | galicia/lugo                  |
+| Orense                   | galicia/orense                |
+| Pontevedra               | galicia/pontevedra            |
