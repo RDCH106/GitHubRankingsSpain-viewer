@@ -77,3 +77,16 @@ Es posible indicar por parametro la región de inicio a visualizar en el visor. 
 | Lugo                     | galicia/lugo                  |
 | Orense                   | galicia/orense                |
 | Pontevedra               | galicia/pontevedra            |
+| **Islas Baleares**       | baleares                      |
+| **Islas Canarias**       | canarias                      |
+| **La Rioja**             | rioja                         |
+| **Madrid**               | madrid                        |
+| **Melilla**              | melilla                       |
+| **Murcia**               | murcia                        |
+| **Navarra**              | navarra                       |
+| **País Vasco**           | euskadi/euskadi               |
+| Álava                    | euskadi/alava                 |
+| Vizcaya                  | euskadi/vizcaya               |
+| Guipuzcoa                | euskadi/guipuzcoa             |
+
+
