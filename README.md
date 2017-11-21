@@ -25,15 +25,31 @@ Es posible indicar por parametro la región de inicio a visualizar en el visor. 
 
 **Tabla de Regiones** :es:
 
-| Región                   | region_name              |
-|--------------------------|--------------------------|
-| :es:**España**:es:       | spain-region             |
-| **Andalucía**            | andalucia/andalucia      |
-| Almería                  | andalucia/almeria        |
-| Cádiz                    | andalucia/cadiz          |
-| Córdoba                  | andalucia/cordoba        |
-| Granda                   | andalucia/granada        |
-| Huelva                   | andalucia/huelva         |
-| Jaén                     | andalucia/jaen           |
-| Málaga                   | andalucia/malaga         |
-| Sevilla                  | andalucia/sevilla        |
+| Región                   | region_name                   |
+|--------------------------|-------------------------------|
+| :es:**España**:es:       | spain-region                  |
+| **Andalucía**            | andalucia/andalucia           |
+| Almería                  | andalucia/almeria             |
+| Cádiz                    | andalucia/cadiz               |
+| Córdoba                  | andalucia/cordoba             |
+| Granda                   | andalucia/granada             |
+| Huelva                   | andalucia/huelva              |
+| Jaén                     | andalucia/jaen                |
+| Málaga                   | andalucia/malaga              |
+| Sevilla                  | andalucia/sevilla             |
+| **Aragón**               | aragon/aragon                 |
+| Huesca                   | aragon/huesca                 |
+| Teruel                   | aragon/teruel                 |
+| Zaragoza                 | aragon/zaragoza               |
+| **Asturias**             | asturias                      |
+| **Cantabria**            | catanbria                     |
+| **Castilla y León**      | castillayleon/castillayleon   |
+| Ávila                    | castillayleon/avila           |
+| Burgos                   | castillayleon/burgos          |
+| León                     | castillayleon/leon            |
+| Palencia                 | castillayleon/palencia        |
+| Salamanca                | castillayleonsalamanca        |
+| Segovia                  | castillayleon/segovia         |
+| Soria                    | castillayleon/soria           |
+| Valladolid               | castillayleon/valladolid      |
+| Zamora                   | castillayleon/zamora          |
