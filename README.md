@@ -53,3 +53,15 @@ Es posible indicar por parametro la región de inicio a visualizar en el visor. 
 | Soria                    | castillayleon/soria           |
 | Valladolid               | castillayleon/valladolid      |
 | Zamora                   | castillayleon/zamora          |
+| **Castilla-La Mancha**   | mancha/mancha                 |
+| Albacete                 | mancha/albacete               |
+| Ciudad Real              | mancha/ciudadreal             |
+| Cuenca                   | mancha/cuenca                 |
+| Guadalajara              | mancha/guadalajara            |
+| Toledo                   | mancha/toledo                 |
+| **Cataluña**             | catalonia/catalonia           |
+| Barcelona                | catalonia/barcelona           |
+| Gerona                   | catalonia/girona              |
+| Lérida                   | catalonia/lleida              |
+| Tarragona                | catalonia/tarragona           |
+| **Ceuta**                | ceuta                         |
