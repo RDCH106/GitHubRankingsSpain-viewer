@@ -9,6 +9,13 @@ Licencia: [AGPL-3.0](https://github.com/RDCH106/ghrankings-viewer/blob/master/LI
 
 Datos obtenidos de [GitHubRankingsSpain](https://github.com/iblancasa/ghrankings)
 
+
+## Proyectos Realacionados
+
+- [GitHubRankingsSpain-badge](https://github.com/RDCH106/GitHubRankingsSpain-badge)
+- [GitHubRankingsSpain](https://github.com/iblancasa/GitHubRankingsSpain)
+
+
 ### 👨‍💻 [Ver Ranking](https://rawgit.com/RDCH106/ghrankings-viewer/master/ghrankings-viewer.html)
 
 Las contribuciones son bienvenidas y se agradecen de antemano. Échale un vistazo al fichero [CONTRIBUTING.md](https://github.com/RDCH106/ghrankings-viewer/blob/master/CONTRIBUTING.md) 🛠️
