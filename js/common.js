@@ -16,7 +16,8 @@ function printRanking(ranking){
             $("#ranking tbody").append("<tr><td><a href='https://github.com/"+arrayItem.name+"' target='_blank'>"+arrayItem.name+"</a>"
             +"</td><td>"+arrayItem.public+"</td><td>"+arrayItem.private+"</td><td>"
             +arrayItem.repositories+"</td><td>"+arrayItem.followers+"</td><td>"+arrayItem.join+"</td><td>"
-            +"<img width='64px' src='"+arrayItem.avatar+"'>"+"</td></tr>");
+            /*+"<img width='64px' src='"+arrayItem.avatar+"'>"+"</td></tr>");*/
+            +"<img width='64px' src='https://avatars.githubusercontent.com/"+arrayItem.name+"'>"+"</td></tr>");  /// ⚠️ Temporal fix
         });
         
 }
