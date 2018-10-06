@@ -82,7 +82,7 @@ function change(value, name) {
 function init(region){
     
     $(document).ready(function() {
-        $("#selection").on('change', function() {
+        $("#selection").on("change", function() {
             change($(this).val(), $(this).find("option:selected").text());
         });
     });
@@ -95,7 +95,7 @@ function init(region){
     
     $(document).ready(function() {
         $("#theme").val("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");  // Default theme
-        $("#theme").on('change', function() {            
+        $("#theme").on("change", function() {            
             $("#css_theme").attr("href", $(this).val());
         });
     });
