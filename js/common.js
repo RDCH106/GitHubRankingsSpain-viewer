@@ -45,7 +45,7 @@ function get_ghranking(region){
 }
 
 function getParameterByName(name, url) {
-    if (!url) url = window.location.href;
+    if (!url) { url = window.location.href; }
     //url = url.toLowerCase(); // This is just to avoid case sensitiveness  
     //name = name.replace(/[\[\]]/g, "\\$&").toLowerCase();// This is just to avoid case sensitiveness for query parameter name
     name = name.replace(/[\[\]]/g, "\\$&");
