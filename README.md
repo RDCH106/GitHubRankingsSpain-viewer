@@ -18,7 +18,7 @@ Datos obtenidos de [GitHubRankingsSpain](https://github.com/iblancasa/ghrankings
 - [GitHubRankingsSpain](https://github.com/iblancasa/GitHubRankingsSpain)
 
 
-### 👨‍💻 [Ver Ranking](https://rawgit.com/RDCH106/ghrankings-viewer/master/ghrankings-viewer.html)
+### 👨‍💻 [Ver Ranking](https://raw.githack.com/RDCH106/GitHubRankingsSpain-viewer/master/ghrankings-viewer.html)
 
 Las contribuciones son bienvenidas y se agradecen de antemano. Échale un vistazo al fichero [CONTRIBUTING.md](https://github.com/RDCH106/ghrankings-viewer/blob/master/CONTRIBUTING.md) 🛠️
 
